@@ -1,0 +1,26 @@
+package com.cg.lab2;
+import java.util.Arrays;
+
+public class Excersice3 {
+	static public int getSorted(int[] array) {
+		int size=array.length;
+		if(size==0)
+			return 0;
+
+	else {
+		for(int i=0;i<size;i++) {
+			StringBuilder sb=new StringBuilder();
+			sb.append(array[i]+"");
+			sb.reverse();
+			array[i]=Integer.parseInt(sb.toString());
+		}
+		Arrays.sort(array);
+		StringBuilder s1=new StringBuilder();
+		for(int i:array)
+			s1.append(i);
+		return Integer.parseInt(s1.toString());
+	}
+
+	}
+
+}

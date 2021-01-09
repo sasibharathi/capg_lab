@@ -1,0 +1,22 @@
+package com.cg.lab2;
+import java.util.Arrays;
+
+public class Exercise4 {
+	public static void main(String[] args) {
+		int array[]={1,2,3,3,4};
+		int size=array.length;
+		int n=ModifyArray(array);
+		for(int i=0;i<n;i++) 
+			System.out.print(array[i]+" ");
+	}
+	 static int ModifyArray(int arr[]) {
+			int size= arr.length;
+			int index=0;
+			//Arrays.sort(arr,collections.reverseOrder());
+			for (int i=0; i<size-1;i++) 
+				if (arr[i]!=arr[i+1]) 
+					arr[index++] = arr[size-1];
+				arr[index++]=arr[size-1];
+				return index;
+	}	
+}

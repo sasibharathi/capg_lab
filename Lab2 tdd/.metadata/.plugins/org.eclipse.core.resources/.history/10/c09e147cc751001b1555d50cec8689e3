@@ -1,0 +1,19 @@
+package com.cg.lab2;
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
+public class Exercise4Test {
+	private Exercise4 exercise4;
+	
+	@Before
+	public void setup() {
+		exercise4=new Exercise4();
+	}
+	
+	
+	@Test
+	public void test_ModifyAndSort_givenEmptyArray_shouldReturnNullAsOutput() {
+		int array
+	}
+}

@@ -1,0 +1,31 @@
+package com.cg.lab2;
+import java.util.Arrays;
+
+public class Exercise4 {
+	public static void main(String[] args) {
+		int[] array=new int[] {1,2,3,3,4};
+		int[] res=getModifyArray(array);
+		for(int i=0;i<5;i++) {
+			System.out.print(array[i]+" ");
+		}
+		
+	}
+	 static int[] getModifyArray(int arr[]) {
+			int n = arr.length;
+			int[] temp = new int[n];
+			int j = 0;
+			Arrays.sort(arr);
+			for (int i = 0; i < n - 1; i++) {
+				if (arr[i] != arr[i + 1]) {
+					temp[j++] = arr[i];
+				}
+			}
+			temp[j++] = arr[n - 1];
+			int sort[] = new int[j];
+			for (int i1 = 0; i1 < j; i1++) {
+				sort[i1] = temp[i1];
+			}
+			
+			return sort;
+		}
+}
