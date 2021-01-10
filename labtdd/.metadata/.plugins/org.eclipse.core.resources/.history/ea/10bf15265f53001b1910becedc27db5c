@@ -1,0 +1,28 @@
+package com.cg.Lab3tdd;
+
+public class Exercise1 {
+	public static void main(String[] args) {
+		 String str="1 2 3 4";
+		 System.out.println(getMethod(str));
+	}
+	public int getMethod(String str)
+	{
+		 String[] words=str.split(" ");
+		 int len=words.length;
+		if(len==0)
+			return 0;
+		else if(len==1)
+			return Integer.parseInt(words[0]);
+		else
+		{
+		 int sum=0;
+	     for(int index=0;index<len;index++)
+	     {  
+	    	 int n=Integer.parseInt(words[index]);
+	         sum=sum+n;;  
+	     }  
+    return sum;
+		}
+	}
+
+}

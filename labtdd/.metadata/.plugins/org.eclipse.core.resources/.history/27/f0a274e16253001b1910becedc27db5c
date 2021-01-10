@@ -1,0 +1,29 @@
+package com.cg.Lab3tdd;
+import java.util.Scanner;
+public class Exercise4 {
+	public static int modifyNumber(int number) {
+		String val = null;
+		int temp =0;
+		int ch;
+		String str1 = Integer.toString(number);
+		StringBuffer s = new StringBuffer();
+		for (int index = 0; index < str1.length()-1; index++) {
+			ch = -(str1.charAt(index) - str1.charAt(index + 1));
+			s.append(ch);
+			
+		}
+		
+		val = s.toString();
+		temp = Integer.parseInt(val);
+		return temp;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int number = sc.nextInt();
+		System.out.println(modifyNumber(number));
+		sc.close();
+	}
+
+}

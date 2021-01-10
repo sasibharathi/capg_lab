@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Exercise1Test" project="Lab3tdd" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cg.Lab3tdd.Exercise1Test" time="0.003">
+    <testcase name="getArrayof_integerElementAsEmptyArray_Andreturn0AsInteger" classname="com.cg.Lab3tdd.Exercise1Test" time="0.003"/>
+    <testcase name="getArrayof_integerElementAs1Array_AndreturnAsInteger" classname="com.cg.Lab3tdd.Exercise1Test" time="0.0"/>
+    <testcase name="getArrayof_integerElementAs_morethan2Array_AndreturnSecondsmallestAsInteger" classname="com.cg.Lab3tdd.Exercise1Test" time="0.0"/>
+  </testsuite>
+</testrun>
